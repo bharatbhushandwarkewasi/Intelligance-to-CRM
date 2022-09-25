@@ -1,0 +1,29 @@
+<html>
+<style>
+body {
+  background-image: url('../static/ombre.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+
+    <center>
+
+        <h1>  CUSTOMER'S INTEREST : </h1>
+    
+    {%if data == 0 %}
+    <h1>Customer is not going to Convert</h1>
+
+    {%elif data==1 %}
+    <h1>Customer will Convert</h1>
+
+    {% endif %}
+        <br><br>
+    <a href='/'>go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>
